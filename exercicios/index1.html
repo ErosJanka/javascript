@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiro exercicio</title>
+</head>
+<body>
+    <h1>Olá! tudo bem?</h1>
+    <p>Abaixo você verá alguns dados que me passou</p>
+    <script>
+        window.alert('É importante preencher as informações, ok?')
+        var nome = window.prompt('Qual é o seu nome?')
+        var idade = Number (window.prompt('Quando anos você tem?'))
+        var salario = Number (window.prompt('qual o seu salário?'))
+        var s = idade + idade 
+        var n = nome.length
+        var sn = idade + n
+        document.write(`Olá, ${nome.toUpperCase()}! tudo bem? Vi aqui que você tem ${idade} anos, Uau! <br>`)
+        document.write(`Aqui vão alguns dados interessantes ao seu respeito <br>`)
+        document.write(`Seu nome possui ${n} letras <br>`)
+        document.write(`A soma da sua idade é de ${s} e a soma das letras do seu nome com a idade é ${sn}! <br>`)
+        document.write(`E o seu salário em R$ fica assim: ${salario.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}`)
+
+
+        
+    </script>
+</body>
+</html>

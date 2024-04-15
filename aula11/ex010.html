@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+    <style>
+        #txtvel{
+            width: 60px;
+        }
+        input[type=button]{
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(3, 145, 240);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel">km/h</p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</strong></p>`
+            if (vel > 60) { //se não colocar o += a mensagem de cima será subustituída pela de baixo. o += irá acrescentar a frase e não substituir
+                res.innerHTML += `<p>Você esta <strong>multado</strong> por excesso de velocidade!</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

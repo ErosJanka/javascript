@@ -3,8 +3,7 @@ function carregar() {
     var msg = window.document.querySelector('#msg')
     var img = window.document.querySelector('#imagem')
     var agora = new Date()
-    // var hora = agora.getHours()
-    var hora = 11
+    var hora = agora.getHours()
     var minutos = agora.getMinutes()
     msg.innerHTML = `agora são ${hora} horas e ${minutos} minutos`
 

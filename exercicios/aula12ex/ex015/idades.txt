@@ -1,0 +1,6 @@
+0 - 2 bb
+2 - 10 crinça
+10 - 18 adolecente
+18 - 50 adulto
+50 - 120 idoso
+120 - ? - morto / talvez

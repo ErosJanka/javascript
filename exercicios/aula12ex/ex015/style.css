@@ -1,0 +1,45 @@
+:root{
+    --cor0:#cc976a; /*dia */
+    --cor1:#4b7a86; /*tarde */
+    --cor2:#26343C; /*noite */
+    --cor3:#3C2C1F; /*fonte dia*/
+
+    --fonte-padrao:Arial, Verdana, Helvica, sans-serif;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+section{
+    background-color: white;
+    padding: 10px;
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    font-family: var(--fonte-padrao);
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.548);
+}
+
+#res{
+    margin-top: 10px;
+}
+
+#foto{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}

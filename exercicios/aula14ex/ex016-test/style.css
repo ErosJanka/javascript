@@ -1,0 +1,42 @@
+:root{
+    --cor0:#BFA980; /*tarde */
+    --cor1:#F3EAC9; /*dia */
+    --cor2:#B0BCA6;
+    --cor3:#61888C;
+    --cor4:#436A6F; /*noite */
+
+    --fonte-padrao:Arial, Verdana, Helvica, sans-serif;
+}
+
+body{
+    background-color: var(--cor4);
+    font-family: var(--fonte-padrao);
+}
+
+
+header{
+    color: white;
+    text-align: center;
+}
+
+
+section{
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+ padding: 15px;
+ width: 500px;
+ margin: auto;
+
+}
+
+#res{
+    padding-top: 10px;
+}
+
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
